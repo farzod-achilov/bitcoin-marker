@@ -1,0 +1,10 @@
+@mixin text($font, $weight, $size, $height, $color, $opacity: 1) {
+  margin: 0;
+  font-family: $font;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  opacity: $opacity;
+}

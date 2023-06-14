@@ -1,0 +1,125 @@
+.hero-section-swiper-btn-left {
+  transform: translate(475px, -45px);
+  padding: 18px;
+  filter: drop-shadow(0px 4px 21px rgba(0, 0, 0, 0.59));
+  background: #0d111b;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 50%;
+}
+
+.hero-section-swiper-btn-right {
+  transform: translate(485px, -45px);
+  padding: 18px;
+  filter: drop-shadow(0px 4px 21px rgba(0, 0, 0, 0.59));
+  background: #0d111b;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 50%;
+}
+
+.main-hero-section {
+  padding-bottom: 50px;
+  .hero-section-swiper {
+    &__card {
+      padding: 30px 50px 152px 30px;
+      background-color: #151822;
+      border-radius: 8px;
+
+      h3 {
+        padding-bottom: 11px;
+        @include text("Hauora", 600, 18px, 32px, #fff);
+        opacity: 0.8;
+        white-space: nowrap;
+      }
+      h2 {
+        padding-bottom: 16px;
+        @include text("Inter", 700, 32px, 35px, #fff);
+      }
+      p {
+        padding-bottom: 32px;
+        @include text("Houora", 400, 16px, 24px, #fff);
+        opacity: 0.8;
+      }
+      a {
+        background: #1d9a6d;
+        box-shadow: 0px 8px 16px rgba(75, 72, 241, 0.19);
+        border-radius: 12px;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 16px 32px;
+      }
+    }
+  }
+  .hero-section__header {
+    display: flex;
+    align-items: center;
+    height: 702px;
+
+    &-img {
+      position: relative;
+      img {
+        inset: 0;
+        z-index: 4;
+        position: absolute;
+        transform: translate(-5%, -44%);
+      }
+    }
+
+    &-content {
+      h2 {
+        max-width: 698px;
+        background: linear-gradient(
+          91.92deg,
+          #ffffff 29.24%,
+          rgba(176, 250, 255, 0) 131.64%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        @include text("Inter", 800, 56px, 61px, #fff);
+      }
+      p {
+        padding-top: 16px;
+        max-width: 567px;
+        @include text("Hauora", 600, 18px, 32px, #fff);
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.main-hero-section--bg-main {
+  background-image: url("/img/hero-section-main-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.main-hero-section--bg-moon {
+  background-image: url("/img/hero-section-bg.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  z-index: 2;
+}
+
+.hero-section-swiper-bg--1 {
+  background-image: url("/img/hero-section-card-img-1.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 3;
+}
+.hero-section-swiper-bg--2 {
+  background-image: url("/img/hero-section-card-img-2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 3;
+}
+.hero-section-swiper-bg--3 {
+  background-image: url("/img/hero-section-card-img-3.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 3;
+}

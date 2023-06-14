@@ -1,0 +1,91 @@
+.ready {
+  position: relative;
+  margin-bottom: 32px;
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: -1;
+    @include text("Golos", 700, 180px, 196px, #fff);
+    background: linear-gradient(
+      91.92deg,
+      rgba(255, 255, 255, 0.05) 29.24%,
+      rgba(176, 250, 255, 0) 131.64%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  &__content {
+    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      background: linear-gradient(
+        91.92deg,
+        #ffffff 29.24%,
+        rgba(176, 250, 255, 0) 131.64%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      @include text("Inter", 700, 42px, 43px, #fff);
+      text-align: center;
+    }
+    p {
+      padding-top: 16px;
+      max-width: 543px;
+      @include text("Hauora", 600, 18px, 32px, #fff);
+      opacity: 0.8;
+      text-align: center;
+    }
+  }
+  &__banners {
+    padding-top: 50px;
+    display: flex;
+    gap: 24px;
+  }
+  &__banner {
+    position: relative;
+    min-width: 354px;
+    height: 257px;
+    background: #151822;
+    border-radius: 8px;
+    padding: 28px 25px;
+    padding-right: 0;
+    h2 {
+      @include text("Inter", 700, 32px, 35px, #fff);
+    }
+    &-content {
+      display: flex;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      p {
+        display: flex;
+        gap: 10px;
+        @include text("Hauora", 600, 18px, 32px, #fff);
+        opacity: 0.8;
+      }
+      span {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 250px;
+        height: 1px;
+      }
+    }
+  }
+}
+
+.banners {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}

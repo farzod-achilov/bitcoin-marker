@@ -1,0 +1,46 @@
+.banner {
+  padding: 75px 54px;
+  width: 100%;
+  background-image: url("/img/banner-bg.svg");
+  border-radius: 28px;
+  h2 {
+    @include text("Inter", 700, 42px, 43px, #fff);
+    background: linear-gradient(
+      91.92deg,
+      #ffffff 29.24%,
+      rgba(176, 250, 255, 0) 131.64%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding-bottom: 16px;
+  }
+  p {
+    @include text("Hauora", 600, 18px, 32px, #fff, 0.8);
+    max-width: 507px;
+    padding-bottom: 32px;
+  }
+  input {
+    border: 0;
+    width: 661px;
+    height: 64px;
+    padding: 20px 31px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.13);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 14px;
+  }
+  a {
+    display: inline-block;
+    transform: translateX(-108%);
+    background: #279d88;
+    box-shadow: 0px 4px 16px rgba(0, 255, 163, 0.26);
+    border-radius: 66px;
+    padding: 14px 31px;
+    @include text("Hauora", 700, 16px, 22px, #fff);
+    text-decoration: none;
+  }
+}
